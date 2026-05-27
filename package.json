@@ -1,34 +1,26 @@
 {
   "name": "react-typescript",
   "version": "1.0.0",
-  "description": "React and TypeScript example starter project",
+  "description": "React and TypeScript example",
   "keywords": [
     "typescript",
     "react",
-    "starter"
+    "vite"
   ],
-  "main": "src/index.tsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "loader-utils": "3.2.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-scripts": "5.0.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "18.2.38",
-    "@types/react-dom": "18.2.15",
-    "typescript": "4.4.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "@types/react": "^18.2.38",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  }
 }
