@@ -4,7 +4,9 @@ export default function App() {
   const [input, setInput] = useState("");
   const addTodo = () => {
     if (input.trim() === "") return;
-    setTodos([...todos, { id: Date.now(), text: inp
+    setTodos([...todos, { id: Date.now(), text: input }]);
+    setInput("");
+  };
   return (
     <div style={{ padding: 20 }}>
       <h1>Todo App</h1>
